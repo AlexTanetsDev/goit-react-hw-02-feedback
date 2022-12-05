@@ -1,11 +1,12 @@
 import PropTypes, { func } from 'prop-types';
 import { arrayOf } from 'prop-types';
+import { FeedbackList } from './FeeddbackOptions.styled';
 
 export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
     
     return (
         <>
-            <ul>
+            <FeedbackList>
                 {options.map((option) => {
                     return (
                            <li key={option}>
@@ -14,7 +15,7 @@ export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
                    )
                })}
             
-            </ul>
+            </FeedbackList>
     </>
 )
 
